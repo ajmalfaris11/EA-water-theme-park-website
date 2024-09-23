@@ -37,3 +37,13 @@
     height: 200px;
     object-fit: cover;
   }
+
+    /* Contact Form Styling */
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+      }
+  
+      .contact-form input, .contact-form textarea {
+        margin-bottom: 10px;
+      }
