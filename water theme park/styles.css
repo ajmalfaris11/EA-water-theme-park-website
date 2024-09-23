@@ -49,6 +49,72 @@
     object-fit: cover;
   }
 
+   /* Custom CSS for Ticket Design */
+   .ticket-card {
+    background: #fff;
+    border: 1px solid #ff007f; /* Border color */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    height: 300px; /* Fixed height for uniformity */
+}
+
+.ticket-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ff007f; /* Color for ticket top */
+    border-radius: 15px 15px 0 0;
+}
+
+.ticket-card::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ff007f; /* Color for ticket bottom */
+    border-radius: 0 0 15px 15px;
+}
+
+.ticket-card .card-body {
+    position: relative;
+}
+
+.ticket-card .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.ticket-card button {
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+/* Perforation Effect */
+.ticket-card .perforation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        #ff007f,
+        #ff007f 4px,
+        #fff 4px,
+        #fff 8px
+    );
+    z-index: 1;
+}
+
     /* Contact Form Styling */
     .contact-form {
         max-width: 600px;
