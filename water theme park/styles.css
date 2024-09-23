@@ -42,6 +42,14 @@
     border-radius: 8px;
   }
 
+  .rides-card, .ticket {
+    transition: 0.5s;
+  }
+
+  .rides-card:hover {
+    scale: 1.05;
+  }
+
   /* CARD SECTION */
 
   .card img {
@@ -113,6 +121,23 @@
         #fff 8px
     );
     z-index: 1;
+}
+.ticket:hover {
+scale: 1.02;
+}
+
+.buy-btn {
+ width: 100%;
+ background: #ff007f;
+ color: white;
+ border: none;
+ height: 40px;
+ border-radius: 12px !important;
+ font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: #c00356;
 }
 
     /* Contact Form Styling */
