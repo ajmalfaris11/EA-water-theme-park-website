@@ -6,6 +6,17 @@
     font-family: Arial, sans-serif;
   }
 
+  .nav-link{
+    transition: 0.5s ease-in-out !important;
+    font-weight: 500 !important;
+  }
+
+
+  .nav-link:hover {
+    color: rgb(44, 150, 150) !important;
+  }
+
+
    /* Intro Section */
    .intro {
     background: url('https://wallpapers.com/images/hd/daytime-water-theme-park-e3u7lxxqnt1dq39o.jpg') no-repeat center center/cover;
