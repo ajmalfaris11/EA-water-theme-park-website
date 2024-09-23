@@ -5,3 +5,28 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
+
+   /* Intro Section */
+   .intro {
+    background: url('https://wallpapers.com/images/hd/daytime-water-theme-park-e3u7lxxqnt1dq39o.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 5em;
+    font-weight: 900;
+  }
+
+  .intro p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .rides-container img, .package-card img {
+    border-radius: 8px;
+  }
