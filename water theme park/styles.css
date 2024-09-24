@@ -1,151 +1,197 @@
  /* Custom CSS */
  body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
 
-  .nav-link{
-    transition: 0.5s ease-in-out !important;
-    font-weight: 500 !important;
-  }
+ .logo {
+    width: 100px;
+ }
+
+ .nav-link {
+     transition: 0.5s ease-in-out !important;
+     font-weight: 500 !important;
+ }
 
 
-  .nav-link:hover {
-    color: rgb(44, 150, 150) !important;
-  }
+ .nav-link:hover {
+     color: #00B8F1 !important;
+ }
 
 
-   /* Intro Section */
-   .intro {
-    background: url('https://wallpapers.com/images/hd/daytime-water-theme-park-e3u7lxxqnt1dq39o.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 
-  .intro h1 {
-    font-size: 5em;
+ /* Intro Section */
+ .intro {
+     background: url('https://wallpapers.com/images/hd/daytime-water-theme-park-e3u7lxxqnt1dq39o.jpg') no-repeat center center/cover;
+     height: 100vh;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .intro h1 {
+    font-size: 5em; /* Default size for larger screens */
     font-weight: 900;
-  }
-
-  .intro p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-
-  .rides-container img, .package-card img {
-    border-radius: 8px;
-  }
-
-  .rides-card, .ticket {
-    transition: 0.5s;
-  }
-
-  .rides-card:hover {
-    scale: 1.05;
-  }
-
-  /* CARD SECTION */
-
-  .card img {
-    height: 200px;
-    object-fit: cover;
-  }
-
-   /* Custom CSS for Ticket Design */
-   .ticket-card {
-    background: #fff;
-    border: 1px solid #ff007f; /* Border color */
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding: 20px;
-    overflow: hidden;
-    height: 300px; /* Fixed height for uniformity */
 }
 
-.ticket-card::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 0;
+@media (max-width: 1200px) {
+
+    .intro h1 {
+        font-size: 4em; /* Medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .intro h1 {
+        font-size: 3em; /* Smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .intro h1 {
+        font-size: 2em; /* Extra small screens */
+    }
+}
+
+ @media screen() {
+    
+ }
+ .intro p {
+     font-size: 1.5em;
+     margin-bottom: 20px;
+ }
+
+ .rides-container img,
+ .package-card img {
+     border-radius: 8px;
+ }
+
+ .rides-card,
+ .ticket {
+     transition: 0.5s;
+ }
+
+ .rides-card:hover {
+     scale: 1.05;
+ }
+
+ /* CARD SECTION */
+
+ .card img {
+     height: 200px;
+     object-fit: cover;
+ }
+
+ /* Custom CSS for Ticket Design */
+ .ticket-card {
+     background: #fff;
+     border: 1px solid #ff007f;
+     /* Border color */
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     position: relative;
+     padding: 20px;
+     overflow: hidden;
+     height: 300px;
+     /* Fixed height for uniformity */
+ }
+
+ .ticket-card::before {
+     content: '';
+     position: absolute;
+     top: -10px;
+     left: 0;
+     width: 100%;
+     height: 20px;
+     background-color: #ff007f;
+     /* Color for ticket top */
+     border-radius: 15px 15px 0 0;
+ }
+
+ .ticket-card::after {
+     content: '';
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     width: 100%;
+     height: 20px;
+     background-color: #ff007f;
+     /* Color for ticket bottom */
+     border-radius: 0 0 15px 15px;
+ }
+
+ .ticket-card .card-body {
+     position: relative;
+ }
+
+ .ticket-card .price {
+     font-size: 1.5em;
+     font-weight: bold;
+     color: #ff007f;
+ }
+
+ .ticket-card button {
+     margin-top: 15px;
+     border-radius: 20px;
+ }
+
+ /* Perforation Effect */
+ .ticket-card .perforation {
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     right: 10px;
+     height: 8px;
+     background: repeating-linear-gradient(90deg,
+             #ff007f,
+             #ff007f 4px,
+             #fff 4px,
+             #fff 8px);
+     z-index: 1;
+ }
+
+ .ticket:hover {
+     scale: 1.02;
+ }
+
+ .buy-btn {
+     width: 100%;
+     background: #ff007f;
+     color: white;
+     border: none;
+     height: 40px;
+     border-radius: 12px !important;
+     font-weight: bold;
+ }
+
+ .buy-btn:hover {
+     background: #c00356;
+ }
+
+ /* Contact Form Styling */
+ .contact-form {
+     max-width: 600px;
+     margin: auto;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     margin-bottom: 10px;
+ }
+
+
+ /* FOOTER DESIGN */
+ 
+ .footer-wawe {
     width: 100%;
-    height: 20px;
-    background-color: #ff007f; /* Color for ticket top */
-    border-radius: 15px 15px 0 0;
-}
+    padding: 0;
+    margin-bottom: -10px;
+ }
 
-.ticket-card::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-color: #ff007f; /* Color for ticket bottom */
-    border-radius: 0 0 15px 15px;
-}
-
-.ticket-card .card-body {
-    position: relative;
-}
-
-.ticket-card .price {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff007f;
-}
-
-.ticket-card button {
-    margin-top: 15px;
-    border-radius: 20px;
-}
-
-/* Perforation Effect */
-.ticket-card .perforation {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    height: 8px;
-    background: repeating-linear-gradient(
-        90deg,
-        #ff007f,
-        #ff007f 4px,
-        #fff 4px,
-        #fff 8px
-    );
-    z-index: 1;
-}
-.ticket:hover {
-scale: 1.02;
-}
-
-.buy-btn {
- width: 100%;
- background: #ff007f;
- color: white;
- border: none;
- height: 40px;
- border-radius: 12px !important;
- font-weight: bold;
-}
-
-.buy-btn:hover {
-    background: #c00356;
-}
-
-    /* Contact Form Styling */
-    .contact-form {
-        max-width: 600px;
-        margin: auto;
-      }
-  
-      .contact-form input, .contact-form textarea {
-        margin-bottom: 10px;
-      }
+ footer{
+    background: #00B8F1;
+ }
