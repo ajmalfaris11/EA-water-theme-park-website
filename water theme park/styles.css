@@ -57,9 +57,9 @@
     }
 }
 
- @media screen() {
+ /* @media screen() {
     
- }
+ } */
  .intro p {
      font-size: 1.5em;
      margin-bottom: 20px;
@@ -185,7 +185,7 @@
 
 
  /* FOOTER DESIGN */
- 
+
  .footer-wawe {
     width: 100%;
     padding: 0;
