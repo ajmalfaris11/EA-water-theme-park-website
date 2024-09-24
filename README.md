@@ -1,6 +1,6 @@
+# Create a README.md file for the specified GitHub project with the provided cloning link.
 
-```markdown
-# Water Theme Park
+readme_content = """# Water Theme Park
 
 Welcome to the Water Theme Park project! This responsive website showcases the various attractions and packages offered at the park, including popular rides and contact information.
 
@@ -36,28 +36,4 @@ The Water Theme Park website provides visitors with an engaging interface to exp
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/entri-assignment.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd entri-assignment
-   ```
-
-## Usage
-
-1. Open the `index.html` file in your web browser to view the website.
-2. Explore the different sections, including popular rides and packages.
-3. Use the contact form to send inquiries.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-```
-
-### Instructions
-
-1. Replace `yourusername` in the clone command with your actual GitHub username.
-2. You can also add any additional sections you think are necessary, like contribution guidelines or a changelog.
-
-Feel free to customize this template to better fit your project!
+   git clone https://github.com/ajmalfaris11/EA-water-theme-park-website.git
