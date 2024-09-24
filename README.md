@@ -1,6 +1,4 @@
-# Create a README.md file for the specified GitHub project with the provided cloning link.
-
-readme_content = """# Water Theme Park
+# Water Theme Park
 
 Welcome to the Water Theme Park project! This responsive website showcases the various attractions and packages offered at the park, including popular rides and contact information.
 
